@@ -57,6 +57,8 @@
     text-decoration: none;
     cursor: pointer;
 
+    transition: color 1s;
+
     &:hover {
       color: $main-color;
     }

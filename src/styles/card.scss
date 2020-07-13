@@ -16,6 +16,11 @@
     height: $image-height;
     width: $image-width;
     margin: 16px 5px 45px;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
   }
 
   &__title {
@@ -70,6 +75,8 @@
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
+
+    transition: background-color 1s, color 1s;
 
     &:hover {
       background-color: $secondary-color;
