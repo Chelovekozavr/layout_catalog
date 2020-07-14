@@ -15,9 +15,9 @@ body {
 .page-content {
   margin: 50px auto;
   padding: 0 $card-body-gap;
-  width: $card-width * 4 + $card-card-gap * 3 + $card-body-gap * 2;
+  max-width: $card-width * 4 + $card-horizontal-gap * 3 + $card-body-gap * 2;
 
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-gap: $card-vertical-gap $card-horizontal-gap;
+  grid-template-columns: repeat(auto-fit, $card-width);
 }
